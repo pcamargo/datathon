@@ -1,0 +1,8 @@
+shap
+numpy
+pandas
+joblib
+seaborn
+streamlit
+matplotlib
+scikit-learn==1.6.1
