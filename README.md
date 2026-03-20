@@ -1,6 +1,6 @@
-# 📊 Passos Mágicos - Datathon
+# 📊 FIAP - Datathon
 
-Projeto de Machine Learning para prever risco educacional (Datathon).
+Projeto de Machine Learning para prever risco educacional.
 
 ## 🛠️ Instalação
 
@@ -38,7 +38,6 @@ Para interagir com o modelo através da interface web:
     ```bash
     streamlit run home.py
     ```
-    *   *Opcional:* Para rodar o script de teste isolado, use `streamlit run test_model.py`.
 3.  O navegador abrirá automaticamente no endereço local (geralmente `http://localhost:8501`).
 
 ## ☁️ Como fazer o Deploy (Streamlit Cloud)
