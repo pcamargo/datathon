@@ -2,6 +2,10 @@
 
 Projeto de Machine Learning para prever risco educacional.
 
+# Repositório
+
+https://github.com/pcamargo/datathon.git
+
 ## 🛠️ Instalação
 
 Certifique-se de ter o Python instalado e execute:
