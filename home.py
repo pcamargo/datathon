@@ -25,6 +25,7 @@ def load_model():
 
 model = load_model()
 
+
 # =========================================================
 # CARREGAMENTO DO EXPLAINER (SHAP)
 # =========================================================
@@ -68,9 +69,9 @@ if model and mostrar_analise:
     st.subheader("📊 Análise em Tempo Real")
     st.metric(label="Probabilidade de Alto Risco", value=f"{prob_risco:.1%}")
 
-    if prob_risco >= 0.7:
+    if prob_risco >= 0.07:
         st.error("⚠️ Alto risco educacional")
-    elif prob_risco >= 0.4:
+    elif prob_risco >= 0.04:
         st.warning("🟡 Risco moderado")
     else:
         st.success("🟢 Baixo risco educacional")
@@ -78,13 +79,14 @@ if model and mostrar_analise:
     # =========================================================
     # EXPLICABILIDADE (SHAP)
     # =========================================================
-    st.markdown("---")
-    st.subheader("🔍 Por que este resultado?")
+    # st.markdown("---")
+    # st.subheader("🔍 Por que este resultado?")
     
     # Gera a explicação para os dados atuais
-    explanation = explainer(input_data)
-    shap_values = explanation[0, :, 1] # Classe 1 (Risco)
+    # explanation = explainer(input_data)
+    # shap_values = explanation[0, :, 1] # Classe 1 (Risco)
 
-    fig, ax = plt.subplots(figsize=(8, 6))
-    shap.plots.waterfall(shap_values, show=False)
-    st.pyplot(fig)
+    # fig, ax = plt.subplots(figsize=(8, 6))
+    # shap.plots.waterfall(shap_values, show=False)
+    # st.pyplot(fig)
+    
